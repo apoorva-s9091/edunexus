@@ -15,11 +15,11 @@ export default function Login() {
     setLoading(true)
     setError('')
     await new Promise(r => setTimeout(r, 900))
-    if (rollNo === '2200123CS' && password === 'edunexus123') {
+    if (rollNo === '240164154' && password === 'edunexus123') {
       localStorage.setItem('edunexus_auth', 'true')
       navigate('/dashboard')
     } else {
-      setError('Invalid Roll Number or Password. Try: 2200123CS / edunexus123')
+      setError('Invalid Roll Number or Password. Try: 240164154 / edunexus123')
     }
     setLoading(false)
   }
